@@ -5,7 +5,8 @@ class Reporte extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Center(
-      child: Text('Reporte'),
+      child: Text('Reporte',
+      style: TextStyle(fontSize: 20.0)),
     );
   }
   

@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
   }
 
   _onSelectItem (int pos){
+    Navigator.of(context).pop();
     setState(() {
        _selectDrawerItem = pos;
     });
@@ -47,6 +48,7 @@ class _HomeState extends State<Home> {
             ListTile(
               title: Text('Asistencia'),
               leading: Icon(Icons.check_circle),
+              selected: (0 == _selectDrawerItem),
               onTap: (){
                 _onSelectItem(0);
 
@@ -55,12 +57,23 @@ class _HomeState extends State<Home> {
             ListTile(
               title: Text('Reporte'),
               leading: Icon(Icons.list_alt),
+              selected: (1 == _selectDrawerItem),
               onTap: (){
                 _onSelectItem(1);
                 
               },
             ),
-            
+            Divider(),
+
+             ListTile(
+              title: Text('Cerrar Sesion'),
+              leading: Icon(Icons.login_outlined),
+              selected: (3 == _selectDrawerItem),
+              onTap: (){
+                _onSelectItem(3);
+                
+              },
+            ),
         ],
       ),
      ),

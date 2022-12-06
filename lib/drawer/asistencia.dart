@@ -5,7 +5,8 @@ class Asistencia extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Center(
-      child: Text('Asistencia', style: TextStyle(fontSize: 40.0),),
+      child: Text('Asistencia', 
+      style: TextStyle(fontSize: 20.0),),
     );
   }
   
