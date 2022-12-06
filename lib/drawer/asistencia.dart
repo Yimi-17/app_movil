@@ -5,13 +5,20 @@ class Asistencia extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(title: Text ('Estudiantes', 
+      
+      appBar:AppBar
+      (title: Text ('Estudiantes', 
       style: TextStyle(fontSize: 15.0)),
       ),
+      
       body: Container(
         child: ListView(children: <Widget>[
-        ListTile(title: Text('1'),)
-
+        ListTile(title: Text('Nota 1')        
+        ),
+        ListTile(title: Text('Nota 2')        
+        ),
+        ListTile(title: Text('Nota 3')        
+        ),
       ],
       ),
       ),
